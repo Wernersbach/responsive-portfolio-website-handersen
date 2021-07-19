@@ -169,6 +169,6 @@ function scrollUp(){
         scrollUp.classList.remove('show-scroll');
     }
 }
-window.addEventListener('scroll', scrollUp);
+window.addEventListener('scrollUp', scrollUp);
 
 /*==================== DARK LIGHT THEME ====================*/ 
