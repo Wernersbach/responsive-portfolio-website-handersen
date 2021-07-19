@@ -163,12 +163,12 @@ window.addEventListener('scroll', scrollHeader);
 function scrollUp(){
     const scrollUp = document.getElementById('scroll-up');
 
-    if(this.scrollTop >= 560){
+    if(this.scrollY >= 560){
         scrollUp.classList.add('show-scroll');
     } else {
         scrollUp.classList.remove('show-scroll');
     }
 }
-window.addEventListener('scrollUp', scrollUp);
+window.addEventListener('scroll', scrollUp);
 
 /*==================== DARK LIGHT THEME ====================*/ 
