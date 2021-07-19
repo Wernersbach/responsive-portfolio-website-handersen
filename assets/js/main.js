@@ -147,7 +147,17 @@ function scrollActive(){
 window.addEventListener('scroll', scrollActive);
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/ 
+function scrollHeader(){
+    const nav = document.getElementById('header');
+    //quando a rolagem for maior que 200 na altura da janela de visualização, adicione a classe scroll-header à tag de cabeçalho
+    if(this.scrollY >= 200 ){
+        nav.classList.add('scroll-header');
+    } else {
+        nav.classList.remove('scroll-header');
+    }
+}
 
+window.addEventListener('scroll', scrollHeader);
 
 /*==================== SHOW SCROLL UP ====================*/ 
 
